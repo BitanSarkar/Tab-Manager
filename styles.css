@@ -1,0 +1,127 @@
+body {
+    width: 350px;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background-color: #f4f4f4;
+    margin: 0;
+    font-size: 16px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    /* Green */
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#results {
+    display: none;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+#results div {
+    padding: 8px;
+    cursor: pointer;
+}
+
+#results div:last-child {
+    border-bottom: none;
+}
+
+#results div:hover {
+    background-color: #f9f9f9;
+}
+
+/* Styles for each tab entry */
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    /* Aligns items to the top */
+    margin-bottom: 8px;
+    /* Adds some space between entries */
+    padding: 5px;
+    /* Padding around items */
+    background-color: #f9f9f9;
+    /* Light background for each item */
+}
+
+/* Styles for the tab description */
+.tab-description {
+    flex-grow: 0;
+    margin-right: 10px;
+    word-wrap: break-word;
+}
+
+.close-button {
+    white-space: nowrap;
+    /* Prevents the button text from wrapping */
+    background-color: #bf5a2f;
+    /* Green background */
+    color: white;
+    /* White text */
+    border: none;
+    /* No border */
+    padding: 5px 10px;
+    /* Padding inside the button */
+    text-align: center;
+    /* Center the text inside the button */
+    text-decoration: none;
+    /* No underline */
+    display: inline-block;
+    /* Allows setting dimensions */
+    font-size: 12px;
+    /* Font size for the button */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    border-radius: 4px;
+    /* Rounded corners for the button */
+}
+
+.favicon {
+    width: 24px; /* Size of the favicon */
+    height: 24px; /* Size of the favicon */
+    margin-right: 5px; /* Space between favicon and title */
+    vertical-align: middle; /* Align with the text */
+}
+
+.mute-button {
+    background: none; /* Remove default button styling */
+    border: none; /* Remove default button border */
+    padding: 0; /* Remove default padding */
+    cursor: pointer; /* Show pointer cursor on hover */
+    margin-left: 10px; /* Space from description or other buttons */
+    margin-right: 10px; /* Space from description or other buttons */
+}
+
+.mute-icon {
+    width: 22px; /* Set icon width */
+    height: 22px; /* Set icon height */
+    vertical-align: middle; /* Align with the text */
+}
